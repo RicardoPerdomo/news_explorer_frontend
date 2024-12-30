@@ -1,17 +1,20 @@
 {
-  "name": "news-explorer-frontend",
+  "name": "news_explorer_frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/RicardoPerdomo/news_explorer_frontend",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
