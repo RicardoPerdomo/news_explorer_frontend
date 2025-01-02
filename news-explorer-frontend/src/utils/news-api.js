@@ -1,5 +1,5 @@
 export function fetchNewsArticles(keyword) {
-  const apiKey = "a1738f41e4874ea8dddc757f6061baae";
+  const apiKey = "c4a25270531c4b40923f9ecd1eb92a12";
   const today = new Date().toISOString().split("T")[0];
   const lastWeek = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
     .toISOString()
