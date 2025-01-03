@@ -35,7 +35,7 @@
   border: none;
   border-radius: 80px;
   color: rgba(26, 27, 34, 1);
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
@@ -79,7 +79,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 613px) {
-  .newscard__section {
+  .newscards {
     padding: 32px 0 24px;
   }
 

@@ -39,7 +39,7 @@ function Footer() {
               <img
                 src={githubIcon}
                 className="footer__icon footer__icon-github"
-              />{" "}
+              />
             </a>
           </li>
           <li className="footer__icon-item">

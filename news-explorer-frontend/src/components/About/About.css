@@ -56,6 +56,11 @@
     margin: 0 0 16px 0;
   }
 }
+@media screen and (max-width: 700px) {
+  .about__info {
+    width: 330px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 613px) {
   .about {
     flex-direction: column;

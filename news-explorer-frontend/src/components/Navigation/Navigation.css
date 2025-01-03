@@ -7,13 +7,14 @@
 .navigation--saved {
   background-color: white;
 }
-.navigation--saved .navigation__home,
+.navigation--saved .navigation__home-button,
 .navigation--saved .navigation__saved-articles,
-.navigation--saved .navigation__signin .navigation--saved .navigation__logout {
+.navigation--saved .navigation__signin-button,
+.navigation--saved .navigation__logout-button {
   color: black;
 }
-.navigation--saved .navigation__signin,
-.navigation--saved .navigation__logout {
+.navigation--saved .navigation__signin-button,
+.navigation--saved .navigation__logout-button {
   background: none;
   outline: 1px solid black;
   color: black;
@@ -28,6 +29,7 @@
   position: relative;
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .navigation__item {
@@ -86,6 +88,7 @@
 
 .navigation__saved-articles--active {
   border-bottom: 2px solid black;
+  color: black;
 }
 
 .navigation__logout-button {
@@ -122,21 +125,19 @@
 
 @media screen and (min-width: 320px) and (max-width: 613px) {
   .navigation {
-    padding-right: 16px;
+    padding: 0 16px;
     align-self: center;
   }
   .navigation__list {
     display: none;
+    gap: 16px;
   }
   .navigation__mobile-button {
     display: block;
     width: 24px;
     height: 24px;
-    background: transparent url("../../assets/menu.svg") no-repeat center;
+    background: transparent no-repeat center;
     border: none;
     padding: 0;
-  }
-  .navigation--saved .navigation__mobile-button {
-    background: transparent url("../../assets/menu-black.svg") no-repeat center;
   }
 }

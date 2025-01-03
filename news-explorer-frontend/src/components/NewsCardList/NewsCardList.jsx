@@ -14,7 +14,7 @@ function NewsCardList({ articles, isLoading, error, isLoggedIn }) {
     <section className="newscard">
       {isLoading && <Preloader />}
       {!isLoading && articles.length > 0 && (
-        <h1 className="newscards__title">Search results</h1>
+        <h2 className="newscards__title">Search results</h2>
       )}
       {error && <p className="newscard__error">{error}</p>}
       {articles.length === 0 && !isLoading && !error && <NotFound />}

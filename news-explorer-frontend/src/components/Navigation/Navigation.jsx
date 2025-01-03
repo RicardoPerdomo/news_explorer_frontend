@@ -2,6 +2,8 @@ import { useLocation } from "react-router-dom";
 import "./Navigation.css";
 import logoutIcon from "../../assets/logout.svg";
 import altIcon from "../../assets/alt-logout.svg";
+import menuIcon from "../../assets/menu.svg";
+import menuBlackIcon from "../../assets/menu-black.svg";
 
 function Navigation({
   handleLoginClick,
@@ -29,7 +31,7 @@ function Navigation({
             onClick={handleHomeClick}
           >
             Home
-          </button>{" "}
+          </button>
         </li>
         {isLoggedIn ? (
           <>
@@ -47,7 +49,7 @@ function Navigation({
             </li>
             <li className="navigation__item">
               <button
-                className="navigation__logout-buttton"
+                className="navigation__logout-button"
                 onClick={handleLogOut}
               >
                 Elise
@@ -73,6 +75,11 @@ function Navigation({
       <button
         type="button"
         className="navigation__mobile-button"
+        style={{
+          backgroundImage: `url(${
+            location.pathname === "/saved-news" ? menuBlackIcon : menuIcon
+          })`,
+        }}
         onClick={handleMobileMenuClick}
       ></button>
     </nav>
