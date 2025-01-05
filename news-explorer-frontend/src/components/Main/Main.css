@@ -2,7 +2,7 @@
   padding: 80px 416px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 0;
+  margin: 0 auto;
   align-items: center;
   padding-top: 80px;
   background-image: url("../../assets/background.png");
@@ -10,6 +10,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
+  box-sizing: border-box;
 }
 .main__title {
   max-width: 608px;
@@ -34,14 +36,17 @@
 
 @media screen and (min-width: 320px) and (max-width: 613px) {
   .main {
-    width: 285px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 30px 16px;
   }
   .main__title {
     font-size: 36px;
     line-height: 40px;
+    width: 285px;
   }
   .main__text {
     padding: 16px 0 122px;
+    width: 285px;
   }
 }

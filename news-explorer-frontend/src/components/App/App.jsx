@@ -17,6 +17,7 @@ import RegisterModal from "../RegisterModal/RegisterModal";
 import MobileNavBar from "../MobileNavBar/MobileNavBar";
 import SuccessModal from "../SuccessModal/SuccessModal";
 import SavedNewsCardList from "../SavedNewsCardList/SavedNewsCardList";
+import NotFound from "../NotFound/NotFound";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");

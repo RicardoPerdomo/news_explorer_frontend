@@ -39,6 +39,7 @@ function Footer() {
               <img
                 src={githubIcon}
                 className="footer__icon footer__icon-github"
+                alt="Github icon"
               />
             </a>
           </li>
@@ -51,6 +52,7 @@ function Footer() {
               <img
                 src={facebookIcon}
                 className="footer__icon footer__icon-facebook"
+                alt="Facebook icon"
               />
             </a>
           </li>

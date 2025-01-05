@@ -1,12 +1,17 @@
 import "./NotFound.css";
+import NotFoundIcon from "../../assets/not-found.svg";
 
 function NotFound() {
   return (
     <div className="not-found">
-      <img className="not-found__icon" alt="not found icon" />
+      <img
+        className="not-found__icon"
+        src={notFoundIcon}
+        alt="not found icon"
+      />
       <h2 className="not-found__title">Nothing found</h2>
       <p className="not-found__text">
-        Sorry, but nothing matched your seach terms.
+        Sorry, but nothing matched your search terms.
       </p>
     </div>
   );

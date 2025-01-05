@@ -50,7 +50,7 @@
   .searchform {
     flex-direction: column;
     width: 288px;
-    padding-bottom: 32px;
+    padding: 0;
   }
 
   .searchform__input {
